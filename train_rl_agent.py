@@ -163,6 +163,8 @@ def parse_args() -> TrainConfig:
 
     return TrainConfig(
         total_timesteps=args.total_timesteps,
+        eval_freq=args.eval_freq,
+        n_eval_episodes=args.n_eval_episodes,
         device=args.device,
         n_envs=args.n_envs,
         success_threshold_m=args.success_threshold,
